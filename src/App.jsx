@@ -12,6 +12,8 @@ import VideoShowcase from './pages/VideoShowcase/VideoShowCase';
 import Pricing from './pages/Pricing/Pricing';
 import Testimonials from './pages/Testimonials/Testimonials';
 import FinalCta from './pages/FinalCta/Finalcta';
+import Footer from './components/Footer/Footer';
+import StickyBar from './components/Stickybar/Stickybar';
 
 function App() {
 
@@ -29,6 +31,8 @@ function App() {
       <VideoShowcase/>
       <Testimonials/>
       <FinalCta/>
+      <Footer/>
+      <StickyBar/>
     </>
   )
 }
