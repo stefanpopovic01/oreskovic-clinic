@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import './AboutClinic.css';
-import team from '../../assets/pic1.webp';
-import pic1 from '../../assets/pic1.jpg';
+import pic0 from '../../assets/pic1.webp';
+import pic1 from '../../assets/about-clinic1.webp';
 
 
 const features = [
@@ -79,13 +79,13 @@ export default function AboutClinic() {
         <div className="about-visual reveal reveal-2">
           <img
             className="about-image about-image-primary"
-            src={team}
-            alt="Prostor Orešković Clinic"
+            src={pic0}
+            alt="Nega lica Orešković Clinic"
           />
           <img
             className="about-image about-image-secondary"
             src={pic1}
-            alt="Izvođenje tretmana u Orešković Clinic"
+            alt="Depilacija u Orešković Clinic"
           />
         </div>
       </div>

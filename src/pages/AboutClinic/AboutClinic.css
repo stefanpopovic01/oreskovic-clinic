@@ -1,12 +1,14 @@
 .about {
   background-color: var(--color-charcoal);
   overflow: hidden;
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
 
 .about-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 56px;
+  gap: 40px;
   align-items: center;
 }
 
@@ -20,15 +22,15 @@
   font-weight: 700;
   letter-spacing: 0.16em;
   color: var(--color-gold);
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .about-title {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 36px;
+  font-size: 34px;
   line-height: 1.2;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .about-title em {
@@ -39,30 +41,30 @@
 .about-intro {
   font-family: var(--font-body);
   font-size: 16px;
-  line-height: 1.75;
+  line-height: 1.7;
   color: rgba(248, 245, 240, 0.75);
   max-width: 520px;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 
 .about-features {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  margin-bottom: 48px;
+  gap: 14px;
+  margin-bottom: 32px;
 }
 
 .about-feature {
-  padding-top: 20px;
+  padding-top: 14px;
   border-top: 1px solid rgba(248, 245, 240, 0.15);
 }
 
 .about-feature-title {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 19px;
+  font-size: 18px;
   color: var(--color-ivory);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .about-feature-text {
@@ -127,10 +129,10 @@
 
 .about-image-secondary {
   position: absolute;
-  bottom: -32px;
-  left: -24px;
+  bottom: -24px;
+  left: 0;
   width: 55%;
-  height: 220px;
+  height: 200px;
   border: 6px solid var(--color-charcoal);
 }
 
