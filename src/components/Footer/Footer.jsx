@@ -1,6 +1,8 @@
 import './Footer.css';
 
 import logo from '../../assets/logo-white.png';
+import { openCookieSettings } from '../../utils/privacyPreferences';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -78,9 +80,10 @@ export default function Footer() {
         <p className="footer-copyright">© {year} Orešković Clinic. Sva prava pridržana.</p>
 
         <div className="footer-legal">
-          <a href="/politika-privatnosti">Politika privatnosti</a>
-          <a href="/uvjeti-koristenja">Uvjeti korištenja</a>
-          <button type="button" className="footer-cookie-button">
+          <Link to="/politika-privatnosti">Politika privatnosti</Link>
+          {/* <a href="/uvjeti-koristenja">Uvjeti korištenja</a> */}
+          <Link to="/postavke-kolacica">Politika kolačića</Link>
+          <button type="button" className="footer-cookie-button" onClick={openCookieSettings}>
             Postavke kolačića
           </button>
         </div>
