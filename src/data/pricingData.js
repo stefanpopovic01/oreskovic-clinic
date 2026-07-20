@@ -162,8 +162,8 @@ export const categories = [
     kind: 'simple',
     tiers: [
       { label: '1 tretman', price: '135€' },
-      { label: 'Paket 6 infuzija', price: '710€', oldPrice: '810€' },
-      { label: 'Paket 12 infuzija', price: '1320€', oldPrice: '1620€' },
+      // { label: 'Paket 6 infuzija', price: '710€', oldPrice: '810€' },
+      // { label: 'Paket 12 infuzija', price: '1320€', oldPrice: '1620€' },
     ],
   },
   {
@@ -181,7 +181,7 @@ export const categories = [
     label: 'Test intolerancije na hranu + status vitamina i minerala',
     description: 'Brzo i jednostavno saznajte koju biste hranu trebali izbaciti iz prehrane.',
     kind: 'simple',
-    tiers: [{ label: '1 test', price: '240€', oldPrice: '360€' }],
+    tiers: [{ label: '1 test', price: '240€', oldPrice: '720€' }],
   },
   {
     id: 'opca-medicina',
