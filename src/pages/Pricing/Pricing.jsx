@@ -3,67 +3,47 @@ import pricing1 from '../../assets/pricing1.webp';
 import pricing2 from '../../assets/pricing2.webp';
 import pricing1mobile from '../../assets/pricing1mobile.webp';
 import pricing2mobile from '../../assets/pricing2mobile.webp';
+import { getCategoryById } from '../../data/pricingData';
 import './Pricing.css';
 
-// To add/edit treatments or prices later: just edit these two arrays.
-// Each treatment can have one or more tiers (single session, packages).
-// oldPrice is optional - only set it when the tier is on sale.
+// Pulls live from pricingData.js - only choose WHICH categories appear
+// in each panel here, by id. Prices/labels/tiers always stay in sync
+// with the Cjenik page and individual treatment pages automatically.
 
-const healthTherapies = {
+const healthIds = ['test-intolerancija', 'test-alergije', 'terapija-ozljeda', 'vitaminske-infuzije'];
+const aestheticIds = ['podbradak', 'mrsavljenje'];
+
+function buildPanel({ title, imageMobile, imageDesktop, ids }) {
+  const categories = ids.map((id) => getCategoryById(id)).filter(Boolean);
+
+  return {
+    title,
+    imageMobile,
+    imageDesktop,
+    moreInfoHref: `/tretmani/${ids[0]}`,
+    treatments: categories.map((category) => ({
+      name: category.label,
+      // These panels only ever show 'simple' categories (flat tier
+      // list). If a 'grouped' category is ever added to the ids above,
+      // fall back to an empty tier list rather than crashing.
+      tiers: category.kind === 'simple' ? category.tiers : [],
+    })),
+  };
+}
+
+const healthTherapies = buildPanel({
   title: 'Zdravstvene terapije',
   imageMobile: pricing1mobile,
   imageDesktop: pricing1,
-  moreInfoHref: '/tretmani/terapija-ozljeda',
-  treatments: [
-    {
-      name: 'Test intolerancije na hranu + status vitamina i minerala',
-      tiers: [{ label: '1 test', price: '240€', oldPrice: '360€' }],
-    },
-    {
-      name: 'Test na alergije + status vitamina i minerala',
-      tiers: [{ label: '1 test', price: '240€', oldPrice: '360€' }],
-    },
-    {
-      name: 'Terapija ozljeda',
-      tiers: [
-        { label: '1 tretman', price: '40€' },
-        { label: 'Paket 10+2 GRATIS', price: '400€' },
-      ],
-    },
-    {
-      name: 'Vitaminske infuzije',
-      tiers: [
-        { label: '1 tretman', price: '135€' },
-        { label: 'Paket 12 infuzija', price: '1320€', oldPrice: '1620€' },
-      ],
-    },
-  ],
-};
+  ids: healthIds,
+});
 
-const aestheticTreatments = {
+const aestheticTreatments = buildPanel({
   title: 'Estetski tretmani',
   imageMobile: pricing2mobile,
   imageDesktop: pricing2,
-  moreInfoHref: '/tretmani/uklanjanje-podbratka',
-  treatments: [
-    {
-      name: 'Uklanjanje podbratka',
-      tiers: [
-        { label: '1 tretman', price: '65€' },
-        { label: 'Paket 10+2 GRATIS', price: '650€' },
-        { label: 'Paket 14+6 GRATIS', price: '950€' },
-      ],
-    },
-    {
-      name: 'Tretmani mršavljenja',
-      tiers: [
-        { label: '1 tretman', price: '65€' },
-        { label: 'Paket 10+2 GRATIS', price: '650€' },
-        { label: 'Paket 14+6 GRATIS', price: '950€' },
-      ],
-    },
-  ],
-};
+  ids: aestheticIds,
+});
 
 function PricingPanel({ category, imageSide }) {
   return (
