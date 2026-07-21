@@ -43,8 +43,18 @@
   text-overflow: ellipsis;
 }
 
-.sticky-bar-phone {
+.sticky-bar-phones {
   display: none;
+  align-items: center;
+  gap: 6px;
+}
+
+.sticky-bar-phones-divider {
+  color: rgba(248, 245, 240, 0.3);
+  font-size: 11px;
+}
+
+.sticky-bar-phone {
   font-family: var(--font-body);
   font-size: 12px;
   color: rgba(248, 245, 240, 0.6);
@@ -95,7 +105,7 @@
 }
 
 @media (min-width: 640px) {
-  .sticky-bar-phone {
-    display: block;
+  .sticky-bar-phones {
+    display: flex;
   }
 }

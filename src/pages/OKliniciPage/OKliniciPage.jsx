@@ -88,7 +88,7 @@ export default function OKliniciPage() {
             <div className="oklinici-highlights">
               <span className="oklinici-highlight-chip">
                 <span className="oklinici-highlight-check">✓</span>
-                5 godina iskustva
+                4,5 godina iskustva
               </span>
               <span className="oklinici-highlight-chip">
                 <span className="oklinici-highlight-check">✓</span>
@@ -127,7 +127,7 @@ export default function OKliniciPage() {
             </h2>
             <p className="oklinici-story-text">
               Orešković Clinic osnovana je 11. siječnja 2022. godine, s jasnim ciljem — spojiti
-              medicinsku stručnost i najnapredniju tehnologiju pod jednim krovom. Kroz 5 godina
+              medicinsku stručnost i najnapredniju tehnologiju pod jednim krovom. Kroz 4,5 godine
               rada izgradili smo tim zdravstvenih djelatnika i proširili se na dvije lokacije,
               Zagreb i Opatiju, uvijek s istim pristupom: svakom pacijentu posvetiti pažnju koju
               zaslužuje, i svaki problem rješavati kombinacijom pravog znanja i prave tehnologije.
@@ -190,13 +190,19 @@ export default function OKliniciPage() {
                 <h3 className="oklinici-location-name">Zagreb</h3>
               </div>
               <p className="oklinici-location-address">Adresa klinike, Zagreb</p>
-              <a href="tel:+385953702034" className="oklinici-location-phone">
-                +385 95 3702 034
-              </a>
+              <div className="oklinici-location-phones">
+                <a href="tel:+385953702034" className="oklinici-location-phone">
+                  +385 95 3702 034
+                </a>
+                <span className="oklinici-location-phones-divider" aria-hidden="true">|</span>
+                <a href="tel:+385916104690" className="oklinici-location-phone">
+                  +385 91 610 4690
+                </a>
+              </div>
               <div className="oklinici-location-map">
                 <iframe
                   title="Orešković Clinic Zagreb"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.393111935964!2d15.995430776011155!3d45.80338491074421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d731b207908d%3A0x9e5dfb2e744298c2!2zT3JlxaFrb3ZpxIcgQ2xpbmlj!5e0!3m2!1sen!2srs!4v1784562642479!5m2!1sen!2srs"
+                  src="https://www.google.com/maps?q=Zagreb&output=embed"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
@@ -219,13 +225,19 @@ export default function OKliniciPage() {
                 <h3 className="oklinici-location-name">Opatija</h3>
               </div>
               <p className="oklinici-location-address">Adresa klinike, Opatija</p>
-              <a href="tel:+385953702034" className="oklinici-location-phone">
-                +385 95 3702 034
-              </a>
+              <div className="oklinici-location-phones">
+                <a href="tel:+385953702034" className="oklinici-location-phone">
+                  +385 95 3702 034
+                </a>
+                <span className="oklinici-location-phones-divider" aria-hidden="true">|</span>
+                <a href="tel:+385916104690" className="oklinici-location-phone">
+                  +385 91 610 4690
+                </a>
+              </div>
               <div className="oklinici-location-map">
                 <iframe
                   title="Orešković Clinic Opatija"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.864660779526!2d14.298964075985792!3d45.33135534229295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x619a51c17cdcc16f%3A0x574db439d6f185d8!2sOre%C5%A1kovi%C4%87%20Rehab%20%26%20Aesthetic!5e0!3m2!1sen!2srs!4v1784562763967!5m2!1sen!2srs"
+                  src="https://www.google.com/maps?q=Opatija&output=embed"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>

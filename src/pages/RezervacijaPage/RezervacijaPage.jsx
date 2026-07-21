@@ -3,6 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import { categories } from '../../data/pricingData';
 import './RezervacijaPage.css';
 
+// TODO: wire this up to a real submission service (Formspree, EmailJS,
+// etc.) once one is chosen - for now it just simulates a successful
+// send so the rest of the flow (redirect, thank-you page) can be built
+// and tested end to end.
 function sendReservation(formData) {
   return new Promise((resolve) => {
     console.log('Reservation submitted (not yet wired to a real backend):', formData);
@@ -72,7 +76,7 @@ export default function RezervacijaPage() {
             </span>
             <span className="rezervacija-highlight-chip">
               <span className="rezervacija-highlight-check">✓</span>
-              Besplatna konzultacija
+              Besplatna konsultacija
             </span>
             <span className="rezervacija-highlight-chip">
               <span className="rezervacija-highlight-check">✓</span>
@@ -80,9 +84,16 @@ export default function RezervacijaPage() {
             </span>
           </div>
 
-          <a href="tel:+385953702034" className="rezervacija-phone">
-            ili nazovite: +385 95 3702 034
-          </a>
+          <div className="rezervacija-phones">
+            <span className="rezervacija-phones-label">ili nazovite:</span>
+            <a href="tel:+385953702034" className="rezervacija-phone">
+              +385 95 3702 034
+            </a>
+            <span className="rezervacija-phones-divider" aria-hidden="true">|</span>
+            <a href="tel:+385916104690" className="rezervacija-phone">
+              +385 91 610 4690
+            </a>
+          </div>
         </div>
 
         <div className="rezervacija-form-card">

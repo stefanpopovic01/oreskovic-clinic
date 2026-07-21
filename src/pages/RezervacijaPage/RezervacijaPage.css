@@ -65,6 +65,14 @@
   }
 }
 
+/* ---- LAYOUT ----------------------------------------------------------
+   Mobile-first, deliberately NOT grid/flex here. Plain block elements
+   stacked vertically are the one CSS layout mode with zero risk of the
+   "min-width: auto" grid/flex track-expansion bug we kept chasing. The
+   two-column side-by-side layout only turns on at the desktop
+   breakpoint, once there's no risk of a narrow viewport being pushed
+   wider than the screen. */
+
 .rezervacija-grid {
   position: relative;
   z-index: 2;
@@ -184,6 +192,25 @@
   justify-content: center;
 }
 
+.rezervacija-phones {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.rezervacija-phones-label {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-ivory);
+}
+
+.rezervacija-phones-divider {
+  color: rgba(248, 245, 240, 0.4);
+  font-size: 12px;
+}
+
 .rezervacija-phone {
   display: inline-block;
   font-family: var(--font-body);
@@ -202,6 +229,12 @@
     max-width: 440px;
   }
 }
+
+/* ---- FORM -------------------------------------------------------------
+   Every control gets an explicit box-sizing: border-box. Relying on the
+   global reset wasn't enough here in practice - some mobile browsers
+   apply their own UA stylesheet box-sizing to form controls specifically,
+   which can win out. Being explicit here removes any doubt. */
 
 .rezervacija-form {
   display: block;

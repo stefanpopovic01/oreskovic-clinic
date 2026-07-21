@@ -526,6 +526,19 @@
   margin-bottom: 6px;
 }
 
+.oklinici-location-phones {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.oklinici-location-phones-divider {
+  color: rgba(34, 31, 29, 0.25);
+  font-size: 13px;
+}
+
 .oklinici-location-phone {
   display: inline-block;
   font-family: var(--font-body);
@@ -533,7 +546,6 @@
   font-weight: 600;
   color: var(--color-gold);
   text-decoration: none;
-  margin-bottom: 20px;
 }
 
 .oklinici-location-phone:hover {

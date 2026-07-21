@@ -34,16 +34,23 @@ export default function FinalCta() {
         </h2>
 
         <p className="final-cta-subtitle">
-          Zakažite besplatnu konzultaciju i saznajte koji je tretman pravi izbor za vas.
+          Zakažite besplatnu konsultaciju i saznajte koji je tretman pravi izbor za vas.
         </p>
 
         <a href="/rezervacija" className="final-cta-button">
           Rezervirajte termin
         </a>
 
-        <a href="tel:+385953702034" className="final-cta-phone">
-          ili nazovite: +385 95 3702 034
-        </a>
+        <div className="final-cta-phones">
+          <span className="final-cta-phones-label">ili nazovite:</span>
+          <a href="tel:+385953702034" className="final-cta-phone">
+            +385 95 3702 034
+          </a>
+          <span className="final-cta-phones-divider" aria-hidden="true">|</span>
+          <a href="tel:+385916104690" className="final-cta-phone">
+            +385 91 610 4690
+          </a>
+        </div>
 
         <div className="final-cta-divider"></div>
 
