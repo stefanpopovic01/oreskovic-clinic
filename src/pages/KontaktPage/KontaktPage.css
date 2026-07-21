@@ -1,0 +1,310 @@
+.kontakt-hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 15% 15%, rgba(182, 150, 100, 0.2) 0%, transparent 55%),
+    radial-gradient(circle at 85% 85%, rgba(217, 169, 160, 0.16) 0%, transparent 55%),
+    var(--color-charcoal);
+  margin-top: -110px;
+  padding-top: calc(var(--section-padding-y) + 110px);
+  padding-bottom: 80px;
+}
+
+.kontakt-hero-blobs {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  display: none;
+}
+
+.kontakt-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(65px);
+  opacity: 0.55;
+  animation: kontakt-drift 18s ease-in-out infinite;
+}
+
+.kontakt-blob-1 {
+  width: 380px;
+  height: 380px;
+  top: -100px;
+  left: 5%;
+  background: var(--color-gold);
+}
+
+.kontakt-blob-2 {
+  width: 340px;
+  height: 340px;
+  bottom: -100px;
+  right: 5%;
+  background: var(--color-champagne);
+  animation-duration: 22s;
+  animation-delay: -8s;
+}
+
+@keyframes kontakt-drift {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(60px, 40px) scale(1.15);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kontakt-blob {
+    animation: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .kontakt-hero-blobs {
+    display: block;
+  }
+}
+
+/* Mobile-first: plain block stacking, no grid/flex risk on the outer
+   layout. Two-column only turns on at desktop. */
+
+.kontakt-grid {
+  position: relative;
+  z-index: 2;
+}
+
+.kontakt-content {
+  color: var(--color-ivory);
+  margin-bottom: 40px;
+  animation: kontakt-fade-in 0.9s ease both;
+}
+
+.kontakt-form-card {
+  background-color: rgba(248, 245, 240, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 24px;
+  padding: 28px 20px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+  animation: kontakt-fade-in 0.9s ease both;
+  animation-delay: 0.15s;
+}
+
+@keyframes kontakt-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kontakt-content,
+  .kontakt-form-card {
+    animation: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .kontakt-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+  }
+
+  .kontakt-content {
+    margin-bottom: 0;
+  }
+
+  .kontakt-form-card {
+    padding: 40px;
+  }
+}
+
+/* Left column */
+
+.kontakt-kicker {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--color-gold);
+  margin-bottom: 16px;
+}
+
+.kontakt-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.15;
+  color: var(--color-ivory);
+  margin-bottom: 18px;
+}
+
+.kontakt-intro {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(248, 245, 240, 0.75);
+  margin-bottom: 28px;
+}
+
+.kontakt-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.kontakt-highlight-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  background-color: rgba(248, 245, 240, 0.92);
+  border-radius: 999px;
+  padding: 8px 14px 8px 8px;
+}
+
+.kontakt-highlight-check {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background-color: var(--color-charcoal);
+  color: var(--color-ivory);
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kontakt-phones {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.kontakt-phones-label {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-ivory);
+}
+
+.kontakt-phones-divider {
+  color: rgba(248, 245, 240, 0.4);
+  font-size: 12px;
+}
+
+.kontakt-phone {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-ivory);
+  text-decoration: underline;
+}
+
+@media (min-width: 900px) {
+  .kontakt-title {
+    font-size: 48px;
+  }
+
+  .kontakt-intro {
+    max-width: 440px;
+  }
+}
+
+/* Form */
+
+.kontakt-form {
+  display: block;
+}
+
+.kontakt-field {
+  margin-bottom: 18px;
+}
+
+.kontakt-field label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  margin-bottom: 8px;
+}
+
+.kontakt-field input,
+.kontakt-field textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-charcoal);
+  background-color: var(--color-white);
+  border: 1px solid rgba(34, 31, 29, 0.14);
+  border-radius: 12px;
+  padding: 12px 14px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.kontakt-field input::placeholder,
+.kontakt-field textarea::placeholder {
+  color: rgba(34, 31, 29, 0.4);
+}
+
+.kontakt-field input:focus,
+.kontakt-field textarea:focus {
+  border-color: var(--color-gold);
+}
+
+.kontakt-field textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.kontakt-error {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: #B3441E;
+  background-color: rgba(179, 68, 30, 0.08);
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 18px;
+}
+
+.kontakt-submit {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-ivory);
+  background-color: var(--color-charcoal);
+  border-radius: 999px;
+  padding: 15px 24px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.kontakt-submit:hover:not(:disabled) {
+  background-color: var(--color-gold);
+  transform: translateY(-2px);
+}
+
+.kontakt-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

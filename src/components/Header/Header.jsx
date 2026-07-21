@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 import logo from '../../assets/logo-black.png';
 
@@ -110,9 +111,8 @@ export default function Header() {
         </nav>
 
         <div className="header-actions">
-          <a href="tel:+385953702034" className="header-phone">
-            +385 95 3702 034
-          </a>
+          
+        <Link to="/kontakt" className="header-phone">Kontakt</Link>
 
           <a href="/rezervacija" className="header-cta">
             {t.rezervacija}
@@ -178,7 +178,7 @@ export default function Header() {
 
         <a href="/cjenik" onClick={closeMenus}>{t.cjenik}</a>
         <a href="/rezultati" onClick={closeMenus}>{t.rezultati}</a>
-        <a href="tel:+385953702034">+385 95 3702 034</a>
+        <Link to="/kontakt" onClick={closeMenus}>Kontakt</Link>
         <a href="/rezervacija" className="header-cta" onClick={closeMenus}>
           {t.rezervacija}
         </a>

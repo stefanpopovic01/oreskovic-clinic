@@ -18,6 +18,8 @@ import UspjesnaRezervacijaPage from './pages/UspjesnaRezervacijaPage/UspjesnaRez
 import RezervacijaPage from './pages/RezervacijaPage/RezervacijaPage';
 import OKliniciPage from './pages/OKliniciPage/OKliniciPage';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
+import KontaktUspjehPage from './pages/KontaktUspjehPage/KontaktUspjehPage';
+import KontaktPage from './pages/KontaktPage/KontaktPage';
 
 function App() {
 
@@ -37,6 +39,8 @@ function App() {
           <Route path="/rezervacija" element={<RezervacijaPage />} />
           <Route path="/uspesna-rezervacija" element={<UspjesnaRezervacijaPage />} />
           <Route path="/o-klinici" element={<OKliniciPage />} />
+          <Route path="/kontakt" element={<KontaktPage />} />
+          <Route path="/kontakt-uspeh" element={<KontaktUspjehPage />} />
           <Route path="*" element={<NotFoundPage />} />
 
       </Routes>
