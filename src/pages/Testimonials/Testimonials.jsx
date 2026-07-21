@@ -66,7 +66,7 @@ export default function Testimonials() {
         </h2>
         <div className="testimonials-rating">
           <Stars />
-          <span className="testimonials-rating-text">5/5 · Više od 1000 zadovoljnih pacijenata</span>
+          <span className="testimonials-rating-text">5/5 · Više od 1000 zadovoljnih pacijenata <br/> Nije zabilježen nijedan slučaj da se nakon naših terapija bolovi nisu smanjili.</span>
         </div>
       </div>
 
