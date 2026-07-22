@@ -30,7 +30,7 @@ const t = {
   // testAlergije: 'Test na alergije',
   // opcaMedicina: 'Opća medicina i dijagnostika',
   // medicinskeIntervencije: 'Medicinske intervencije i terapije',
-  fizikalnaTerapija: 'Fizikalna i regenerativna terapija',
+  // fizikalnaTerapija: 'Fizikalna i regenerativna terapija',
   // nutricionizam: 'Nutricionizam i savjetovanje',
 };
 
@@ -48,12 +48,12 @@ export default function Header() {
   return (
     <header className="site-header header-shake">
       <div className="header-bar">
-        <a href="/" className="header-logo" onClick={closeMenus}>
+        <Link to="/" className="header-logo" onClick={closeMenus}>
           <img src={logo} alt="Orešković Clinic" />
-        </a>
+        </Link>
 
         <nav className="header-nav" aria-label="Glavna navigacija">
-          <a href="/o-klinici">{t.oKlinici}</a>
+          <Link to="/o-klinici">{t.oKlinici}</Link>
 
           <div
             className="header-dropdown"
@@ -75,30 +75,30 @@ export default function Header() {
                     <span className="header-dropdown-heading">{t.estetski}</span>
 
                     <span className="header-dropdown-subheading">{t.lice}</span>
-                    <a href="/tretmani/anti-age">{t.antiAge}</a>
+                    <Link to="/tretmani/anti-age">{t.antiAge}</Link>
                     {/* <a href="/tretmani/botox">{t.botox}</a> */}
-                    <a href="/tretmani/podocnjaci">{t.podocnjaci}</a>
-                    <a href="/tretmani/podbradak">{t.podbradak}</a>
-                    <a href="/tretmani/usne-fileri">{t.usneFileri}</a>
+                    <Link to="/tretmani/podocnjaci">{t.podocnjaci}</Link>
+                    <Link to="/tretmani/podbradak">{t.podbradak}</Link>
+                    <Link to="/tretmani/usne-fileri">{t.usneFileri}</Link>
                     {/* <a href="/tretmani/estetika-kozmetologija">{t.estetikaKozmetologija}</a> */}
 
                     <span className="header-dropdown-subheading">{t.tijelo}</span>
-                    <a href="/tretmani/celulit">{t.celulit}</a>
-                    <a href="/tretmani/mrsavljenje">{t.mrsavljenje}</a>
-                    <a href="/tretmani/dlacice">{t.dlacice}</a>
-                    <a href="/tretmani/jacanje-misica">{t.jacanjeMisica}</a>
-                    <a href="/tretmani/straznjica">{t.straznjica}</a>
+                    <Link to="/tretmani/celulit">{t.celulit}</Link>
+                    <Link to="/tretmani/mrsavljenje">{t.mrsavljenje}</Link>
+                    <Link to="/tretmani/dlacice">{t.dlacice}</Link>
+                    <Link to="/tretmani/jacanje-misica">{t.jacanjeMisica}</Link>
+                    <Link to="/tretmani/straznjica">{t.straznjica}</Link>
                   </div>
 
                   <div className="header-dropdown-column">
                     <span className="header-dropdown-heading">{t.zdravstveni}</span>
-                    <a href="/tretmani/terapija-ozljeda">{t.terapijaOzljeda}</a>
-                    <a href="/tretmani/vitaminske-infuzije">{t.vitaminskeInfuzije}</a>
-                    <a href="/tretmani/test-intolerancija">{t.testIntolerancije}</a>
+                    <Link to="/tretmani/terapija-ozljeda">{t.terapijaOzljeda}</Link>
+                    <Link to="/tretmani/vitaminske-infuzije">{t.vitaminskeInfuzije}</Link>
+                    <Link to="/tretmani/test-intolerancija">{t.testIntolerancije}</Link>
                     {/* <a href="/tretmani/test-alergije">{t.testAlergije}</a> */}
                     {/* <a href="/tretmani/opca-medicina">{t.opcaMedicina}</a> */}
                     {/* <a href="/tretmani/medicinske-intervencije">{t.medicinskeIntervencije}</a> */}
-                    <a href="/tretmani/fizikalna-terapija">{t.fizikalnaTerapija}</a>
+                    {/* <Link to="/tretmani/fizikalna-terapija">{t.fizikalnaTerapija}</Link> */}
                     {/* <a href="/tretmani/nutricionizam">{t.nutricionizam}</a> */}
                   </div>
                 </div>
@@ -106,17 +106,17 @@ export default function Header() {
             )}
           </div>
 
-          <a href="/cjenik">{t.cjenik}</a>
-          <a href="/rezultati">{t.rezultati}</a>
+          <Link to="/cjenik">{t.cjenik}</Link>
+          <Link to="/rezultati">{t.rezultati}</Link>
         </nav>
 
         <div className="header-actions">
-          
+
         <Link to="/kontakt" className="header-phone">Kontakt</Link>
 
-          <a href="/rezervacija" className="header-cta">
+          <Link to="/rezervacija" className="header-cta">
             {t.rezervacija}
-          </a>
+          </Link>
 
           <button
             className={`header-burger ${mobileOpen ? 'is-open' : ''}`}
@@ -132,7 +132,7 @@ export default function Header() {
       </div>
 
       <div className={`header-mobile-menu ${mobileOpen ? 'is-open' : ''}`}>
-        <a href="/o-klinici" onClick={closeMenus}>{t.oKlinici}</a>
+        <Link to="/o-klinici" onClick={closeMenus}>{t.oKlinici}</Link>
 
         <div className="header-mobile-accordion">
           <button
@@ -149,39 +149,39 @@ export default function Header() {
               <span className="header-dropdown-heading">{t.estetski}</span>
 
               <span className="header-dropdown-subheading">{t.lice}</span>
-              <a href="/tretmani/anti-age" onClick={closeMenus}>{t.antiAge}</a>
+              <Link to="/tretmani/anti-age" onClick={closeMenus}>{t.antiAge}</Link>
               {/* <a href="/tretmani/botox" onClick={closeMenus}>{t.botox}</a> */}
-              <a href="/tretmani/podocnjaci" onClick={closeMenus}>{t.podocnjaci}</a>
-              <a href="/tretmani/podbradak" onClick={closeMenus}>{t.podbradak}</a>
-              <a href="/tretmani/usne-fileri" onClick={closeMenus}>{t.usneFileri}</a>
+              <Link to="/tretmani/podocnjaci" onClick={closeMenus}>{t.podocnjaci}</Link>
+              <Link to="/tretmani/podbradak" onClick={closeMenus}>{t.podbradak}</Link>
+              <Link to="/tretmani/usne-fileri" onClick={closeMenus}>{t.usneFileri}</Link>
               {/* <a href="/tretmani/estetika-kozmetologija" onClick={closeMenus}>{t.estetikaKozmetologija}</a> */}
 
               <span className="header-dropdown-subheading">{t.tijelo}</span>
-              <a href="/tretmani/celulit" onClick={closeMenus}>{t.celulit}</a>
-              <a href="/tretmani/mrsavljenje" onClick={closeMenus}>{t.mrsavljenje}</a>
-              <a href="/tretmani/dlacice" onClick={closeMenus}>{t.dlacice}</a>
-              <a href="/tretmani/jacanje-misica" onClick={closeMenus}>{t.jacanjeMisica}</a>
-              <a href="/tretmani/straznjica" onClick={closeMenus}>{t.straznjica}</a>
+              <Link to="/tretmani/celulit" onClick={closeMenus}>{t.celulit}</Link>
+              <Link to="/tretmani/mrsavljenje" onClick={closeMenus}>{t.mrsavljenje}</Link>
+              <Link to="/tretmani/dlacice" onClick={closeMenus}>{t.dlacice}</Link>
+              <Link to="/tretmani/jacanje-misica" onClick={closeMenus}>{t.jacanjeMisica}</Link>
+              <Link to="/tretmani/straznjica" onClick={closeMenus}>{t.straznjica}</Link>
 
               <span className="header-dropdown-heading">{t.zdravstveni}</span>
-              <a href="/tretmani/terapija-ozljeda" onClick={closeMenus}>{t.terapijaOzljeda}</a>
-              <a href="/tretmani/vitaminske-infuzije" onClick={closeMenus}>{t.vitaminskeInfuzije}</a>
-              <a href="/tretmani/test-intolerancija" onClick={closeMenus}>{t.testIntolerancije}</a>
+              <Link to="/tretmani/terapija-ozljeda" onClick={closeMenus}>{t.terapijaOzljeda}</Link>
+              <Link to="/tretmani/vitaminske-infuzije" onClick={closeMenus}>{t.vitaminskeInfuzije}</Link>
+              <Link to="/tretmani/test-intolerancija" onClick={closeMenus}>{t.testIntolerancije}</Link>
               {/* <a href="/tretmani/test-alergije" onClick={closeMenus}>{t.testAlergije}</a> */}
               {/* <a href="/tretmani/opca-medicina" onClick={closeMenus}>{t.opcaMedicina}</a> */}
               {/* <a href="/tretmani/medicinske-intervencije" onClick={closeMenus}>{t.medicinskeIntervencije}</a> */}
-              <a href="/tretmani/fizikalna-terapija" onClick={closeMenus}>{t.fizikalnaTerapija}</a>
+              {/* <Link to="/tretmani/fizikalna-terapija" onClick={closeMenus}>{t.fizikalnaTerapija}</Link> */}
               {/* <a href="/tretmani/nutricionizam" onClick={closeMenus}>{t.nutricionizam}</a> */}
             </div>
           )}
         </div>
 
-        <a href="/cjenik" onClick={closeMenus}>{t.cjenik}</a>
-        <a href="/rezultati" onClick={closeMenus}>{t.rezultati}</a>
+        <Link to="/cjenik" onClick={closeMenus}>{t.cjenik}</Link>
+        <Link to="/rezultati" onClick={closeMenus}>{t.rezultati}</Link>
         <Link to="/kontakt" onClick={closeMenus}>Kontakt</Link>
-        <a href="/rezervacija" className="header-cta" onClick={closeMenus}>
+        <Link to="/rezervacija" className="header-cta" onClick={closeMenus}>
           {t.rezervacija}
-        </a>
+        </Link>
       </div>
     </header>
   );

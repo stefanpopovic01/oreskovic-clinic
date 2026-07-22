@@ -142,7 +142,7 @@ export const treatments = {
     faq: genericFaq,
   },
 
-  'vitaminske-infuzije': {
+'vitaminske-infuzije': {
     pricingId: 'vitaminske-infuzije',
     slug: 'vitaminske-infuzije',
     name: 'Vitaminske infuzije',
@@ -150,16 +150,18 @@ export const treatments = {
     heroImage: '/treatments/vitaminske-infuzije.webp',
     pricingImage: '/treatments/vitaminske-infuzije-pricing.webp',
     shortBenefit:
-      'Vitamini i minerali direktno u krvotok, uz 100% iskoristivost hranjivih tvari. Idealno za brži oporavak, jačanje imuniteta i više energije. Svaka terapija prilagođena je individualnim potrebama, uz stručnu konzultaciju prije tretmana.',
+      'Vitaminske infuzije za podršku imunitetu — ojačajte organizam i pružite mu podršku kada mu je najpotrebnija. Vitamini i minerali direktno u krvotok, uz 100% iskoristivost hranjivih tvari. Manje umora, više energije i vitalnosti, uz terapiju prilagođenu vašim individualnim potrebama.',
     description:
-      'Vitaminske infuzije direktno unose vitamine, minerale, aminokiseline i antioksidanse u krvotok, zaobilazeći probavni sustav. Za razliku od oralne primjene, intravenozni put omogućuje trenutnu apsorpciju i maksimalnu iskoristivost hranjivih tvari, uz istovremenu hidrataciju i ravnotežu elektrolita.',
+      'Vitaminske infuzije s pažljivo odabranom kombinacijom vitamina, minerala i antioksidansa osmišljene su kako bi podržale normalnu funkciju imunološkog sustava, smanjile osjećaj umora i pridonijele većoj razini energije i vitalnosti. Direktno unose vitamine, minerale, aminokiseline i antioksidanse u krvotok, zaobilazeći probavni sustav — za razliku od oralne primjene, intravenozni put omogućuje trenutnu apsorpciju i maksimalnu iskoristivost hranjivih tvari, uz istovremenu hidrataciju i ravnotežu elektrolita. Svaka terapija provodi se uz medicinski nadzor i prilagođava se individualnim potrebama pacijenta.',
     highlights: [
-      'Brza apsorpcija vitamina i minerala',
-      '100% iskoristivost hranjivih tvari',
-      'Jačanje imuniteta',
-      'Više energije i brži oporavak',
-      'Individualan pristup svakom pacijentu',
-      'Stručne konzultacije prije terapije',
+      'Podrška normalnoj funkciji imunološkog sustava',
+      'Brza nadoknada vitamina i minerala',
+      'Pomaže u smanjenju umora i iscrpljenosti',
+      'Doprinosi većoj razini energije i vitalnosti',
+      'Podržava oporavak nakon bolesti ili intenzivnog fizičkog napora',
+      'Visoka iskoristivost nutrijenata zahvaljujući intravenskoj primjeni',
+      'Individualno prilagođen sastav prema potrebama pacijenta',
+      'Svaka terapija provodi se uz medicinski nadzor',
     ],
     process: [
       { title: 'Konsultacija', text: 'Obavezna konsultacija (15–30 min) prije svakog tretmana, na koju je potrebno donijeti kompletan krvni status i biokemijski nalaz.' },
@@ -167,7 +169,7 @@ export const treatments = {
       { title: 'Infuzija', text: 'Infuzija sadrži B-kompleks, vitamin C, glutation i minerale poput cinka i magnezija, isporučene direktno u krvotok.' },
     ],
     forWhom:
-      'Vitaminske infuzije namijenjene su osobama koje žele povećati razinu energije, ojačati imunitet, ubrzati oporavak nakon bolesti ili fizičkog napora, te nadoknaditi nedostatak vitamina i minerala. Posebno su korisne kod poteškoća s peroralnim unosom vitamina ili apsorpcijskih problema. Kandidati za terapiju su svi osim trudnica, bubrežnih i srčanih bolesnika te djece mlađe od 14 godina.',
+      'Uložite u svoje zdravlje i vitalnost — vitaminske infuzije namijenjene su svima koji žele podržati svoj imunitet kada im je najpotrebniji, vratiti energiju i osjećaj svježine, te pomoći organizmu u razdobljima povećanog stresa i fizičkog napora. Pogodne su i za sve koji žele brzo i učinkovito nadoknaditi važne vitamine i minerale, ubrzati oporavak nakon bolesti, ili jednostavno nadoknaditi nedostatak hranjivih tvari — uz individualni pristup i terapiju prilagođenu upravo vama. Posebno su korisne kod poteškoća s peroralnim unosom vitamina ili apsorpcijskih problema. Kandidati za terapiju su svi osim trudnica, bubrežnih i srčanih bolesnika te djece mlađe od 14 godina.',
     extraSections: [
       {
         title: 'Kako djeluje intravenozna terapija?',
@@ -560,32 +562,32 @@ straznjica: {
   //   faq: genericFaq,
   // },
 
-'fizikalna-terapija': {
-    pricingId: 'fizikalna-terapija',
-    slug: 'fizikalna-terapija',
-    name: 'Fizikalna i regenerativna terapija',
-    category: 'Zdravstvene usluge',
-    heroImage: '/treatments/fizikalna-terapija.webp',
-    pricingImage: '/treatments/fizikalna-terapija-pricing.webp',
-    shortBenefit:
-      'Ubrzajte oporavak i smanjite bol uz moderne fizikalne terapije. Djelujemo na cirkulaciju, regeneraciju tkiva i mišićni tonus. Bez lijekova, bez perioda mirovanja.',
-    description:
-      'Nudimo širok raspon fizikalnih i regenerativnih terapija — od radiofrekventne regeneracije tkiva, preko limfne drenaže, do neuromuskularne stimulacije. Terapije potiču cirkulaciju, smanjuju upalu i ubrzavaju oporavak tkiva.',
-    highlights: [
-      'Ubrzava regeneraciju tkiva',
-      'Smanjuje bol i upalu',
-      'Poboljšava cirkulaciju i mišićni tonus',
-      'Bez lijekova i bez perioda mirovanja',
-    ],
-    process: [
-      { title: 'Procjena', text: 'Analiziramo vaše stanje i biramo najprikladniju terapiju.' },
-      { title: 'Terapija', text: 'Terapija se provodi ciljano na tretirano područje.' },
-      { title: 'Praćenje napretka', text: 'Pratimo napredak kroz seriju terapija do željenog rezultata.' },
-    ],
-    forWhom:
-      'Namijenjeno svima koji se bore s bolovima, upalama, slabom cirkulacijom ili žele ubrzati oporavak nakon napora ili ozljede.',
-    faq: genericFaq,
-  },
+// 'fizikalna-terapija': {
+//     pricingId: 'fizikalna-terapija',
+//     slug: 'fizikalna-terapija',
+//     name: 'Fizikalna i regenerativna terapija',
+//     category: 'Zdravstvene usluge',
+//     heroImage: '/treatments/fizikalna-terapija.webp',
+//     pricingImage: '/treatments/fizikalna-terapija-pricing.webp',
+//     shortBenefit:
+//       'Ubrzajte oporavak i smanjite bol uz moderne fizikalne terapije. Djelujemo na cirkulaciju, regeneraciju tkiva i mišićni tonus. Bez lijekova, bez perioda mirovanja.',
+//     description:
+//       'Nudimo širok raspon fizikalnih i regenerativnih terapija — od radiofrekventne regeneracije tkiva, preko limfne drenaže, do neuromuskularne stimulacije. Terapije potiču cirkulaciju, smanjuju upalu i ubrzavaju oporavak tkiva.',
+//     highlights: [
+//       'Ubrzava regeneraciju tkiva',
+//       'Smanjuje bol i upalu',
+//       'Poboljšava cirkulaciju i mišićni tonus',
+//       'Bez lijekova i bez perioda mirovanja',
+//     ],
+//     process: [
+//       { title: 'Procjena', text: 'Analiziramo vaše stanje i biramo najprikladniju terapiju.' },
+//       { title: 'Terapija', text: 'Terapija se provodi ciljano na tretirano područje.' },
+//       { title: 'Praćenje napretka', text: 'Pratimo napredak kroz seriju terapija do željenog rezultata.' },
+//     ],
+//     forWhom:
+//       'Namijenjeno svima koji se bore s bolovima, upalama, slabom cirkulacijom ili žele ubrzati oporavak nakon napora ili ozljede.',
+//     faq: genericFaq,
+//   },
 
   // nutricionizam: {
   //     pricingId: 'nutricionizam',

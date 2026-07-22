@@ -6,12 +6,13 @@ import FinalCta from '../FinalCta/FinalCta';
 // To add a new category later: just add one line here, and drop images
 // in /public/results/{id}/1.jpg, 2.jpg, etc. up to {count}.
 const categories = [
-  { id: 'podbradak', label: 'Uklanjanje podbratka', count: 3 },
-  { id: 'podocnjaci', label: 'Uklanjanje podočnjaka', count: 4 },
-  { id: 'mrsavljenje', label: 'Tretmani mršavljenja', count: 8 },
-  { id: 'celulit', label: 'Uklanjanje celulita', count: 4 },
-  { id: 'bore', label: 'Uklanjanje bora', count: 4 },
   { id: 'terapija-ozljeda', label: 'Terapija ozljeda', count: 3 },
+  { id: 'mrsavljenje', label: 'Tretmani mršavljenja', count: 8 },
+  { id: 'bore', label: 'Uklanjanje bora', count: 4 },
+  { id: 'podocnjaci', label: 'Uklanjanje podočnjaka', count: 4 },
+  { id: 'podbradak', label: 'Uklanjanje podbratka', count: 3 },
+  { id: 'celulit', label: 'Uklanjanje celulita', count: 4 },
+
 ];
 
 function buildImages() {

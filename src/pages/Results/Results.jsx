@@ -2,12 +2,12 @@ import { useEffect, useRef, useState } from 'react';
 import './Results.css';
 
 const results = [
-  { title: 'Uklanjanje podočnjaka', image: '/results/01.webp' },
   { title: 'Tretmani mršavljenja', image: '/results/02.webp' },
-  { title: 'Bore na čelu', image: '/results/03.webp' },
   { title: 'Tretmani mršavljenja', image: '/results/04.webp' },
-  { title: 'Uklanjanje celulita', image: '/results/05.webp' },
   { title: 'Tretmani mršavljenja', image: '/results/06.webp' },
+  { title: 'Bore na čelu', image: '/results/03.webp' },
+  { title: 'Uklanjanje podočnjaka', image: '/results/01.webp' },
+  { title: 'Uklanjanje celulita', image: '/results/05.webp' },
 ];
 
 const loopResults = [...results, ...results];

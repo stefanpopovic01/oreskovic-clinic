@@ -132,7 +132,6 @@ export default function Footer() {
 
         <div className="footer-legal">
           <Link to="/politika-privatnosti">Politika privatnosti</Link>
-          {/* <a href="/uvjeti-koristenja">Uvjeti korištenja</a> */}
           <Link to="/postavke-kolacica">Politika kolačića</Link>
           <button type="button" className="footer-cookie-button" onClick={openCookieSettings}>
             Postavke kolačića
