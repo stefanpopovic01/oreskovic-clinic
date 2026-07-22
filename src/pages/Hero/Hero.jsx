@@ -1,7 +1,7 @@
 import './Hero.css';
 import { Link } from 'react-router-dom';
 
-import hero1 from '../../assets/hero1.jpg';
+import hero1 from '../../assets/hero1.webp';
 
 function scrollToSection(e, targetId) {
   e.preventDefault();

@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import './TrustBar.css';
 import team from '../../assets/team.webp';
-import hero1 from '../../assets/hero1.jpg';
+import hero1 from '../../assets/hero1.webp';
 
 export default function TrustBar() {
   const sectionRef = useRef(null);
