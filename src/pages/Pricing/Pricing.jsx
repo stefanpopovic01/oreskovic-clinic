@@ -45,7 +45,7 @@ function PricingPanel({ category, imageSide }) {
       <div className="pricing-panel-image">
         <picture>
           <source media="(min-width: 900px)" srcSet={category.imageDesktop} />
-          <img src={category.imageMobile} alt={category.title} />
+          <img src={category.imageMobile} loading="lazy" alt={category.title} />
         </picture>
       </div>
 

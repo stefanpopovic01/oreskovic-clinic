@@ -27,7 +27,7 @@ export default function TrustBar() {
   return (
     <section className="trust section" ref={sectionRef}>
       <div className="trust-background">
-        <img src={hero1} alt="Orešković Clinic - njega i oporavak" />
+        <img src={hero1} loading="eager" alt="Orešković Clinic - njega i oporavak" />
         <div className="trust-overlay"></div>
       </div>
 
@@ -70,6 +70,7 @@ export default function TrustBar() {
             <img
               className="trust-stat-photo"
               src={team}
+              loading="lazy"
               alt="Stručni medicinski tim Orešković Clinic"
             />
             <span className="trust-stat-label">Stručni medicinski tim</span>

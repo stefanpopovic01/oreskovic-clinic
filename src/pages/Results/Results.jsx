@@ -111,6 +111,7 @@ export default function Results() {
               <img
                 className="result-card-image"
                 src={result.image}
+                loading="lazy"
                 alt={result.title}
                 draggable={false}
               />

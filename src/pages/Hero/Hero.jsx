@@ -80,7 +80,7 @@ export default function Hero() {
         </div>
 
         <div className="hero-visual hero-enter hero-enter-2">
-          <img src={hero1} alt="Orešković Clinic - njega i oporavak" />
+          <img src={hero1} fetchPriority="high" alt="Orešković Clinic - njega i oporavak" />
         </div>
       </div>
     </section>

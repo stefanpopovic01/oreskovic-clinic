@@ -157,6 +157,7 @@ export default function Treatments() {
                 className="treatment-card-image"
                 src={`/treatments/${treatment.slug}.webp`}
                 alt={treatment.name}
+                loading="lazy"
                 draggable={false}
               />
               <div className="treatment-card-overlay"></div>

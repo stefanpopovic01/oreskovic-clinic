@@ -25,7 +25,7 @@ export default function Offer() {
 
   return (
     <section className="offer section" ref={sectionRef}>
-      <img className="offer-image" src={offer} alt="Trajno uklanjanje dlačica - Orešković Clinic" />
+      <img className="offer-image" src={offer} loading="lazy" alt="Trajno uklanjanje dlačica - Orešković Clinic" />
       <div className="offer-gradient"></div>
 
       <div className="container offer-layout">

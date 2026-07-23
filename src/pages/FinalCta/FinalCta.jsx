@@ -58,11 +58,13 @@ export default function FinalCta() {
         <div className="final-cta-funding">
           <img
             src="/logos/eu-logo.webp"
+            loading="lazy"
             alt="Sufinancirano sredstvima Europske unije"
             className="final-cta-funding-logo"
           />
           <img
             src="/logos/hamag-logo.webp"
+            loading="lazy"
             alt="HAMAG-BICRO"
             className="final-cta-funding-logo"
           />

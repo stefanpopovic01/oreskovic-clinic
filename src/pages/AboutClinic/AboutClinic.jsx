@@ -111,11 +111,13 @@ export default function AboutClinic() {
           <img
             className="about-image about-image-primary"
             src={pic0}
+          	loading="lazy"
             alt="Nega lica Orešković Clinic"
           />
           <img
             className="about-image about-image-secondary"
             src={pic1}
+          	loading="lazy"
             alt="Depilacija u Orešković Clinic"
           />
         </div>
