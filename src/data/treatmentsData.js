@@ -69,7 +69,7 @@ export const treatments = {
     extraSections: [
       {
         title: 'Gdje obavljamo testiranje?',
-        text: 'Testiranje možete obaviti na više lokacija diljem Hrvatske: Zagreb, Opatija, Split, Osijek, Pula, Dubrovnik, Varaždin, Zadar, Šibenik.',
+        text: 'Testiranje možete obaviti na više lokacija diljem Hrvatske: Zagreb, Opatija, Split, Osijek, Pula, Dubrovnik, Varaždin, Zadar.',
       },
     ],
     faq: genericFaq,
